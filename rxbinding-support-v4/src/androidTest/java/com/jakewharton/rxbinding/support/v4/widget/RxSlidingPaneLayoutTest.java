@@ -3,7 +3,7 @@ package com.jakewharton.rxbinding.support.v4.widget;
 import android.app.Instrumentation;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.Espresso;
-import android.support.test.espresso.contrib.CountingIdlingResource;
+import android.support.test.espresso.idling.CountingIdlingResource;
 import android.support.test.espresso.matcher.BoundedMatcher;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;

@@ -8,14 +8,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'rxbinding-module'
 
 dependencies {
-  compile rootProject.ext.rxJava
-  compile rootProject.ext.rxAndroid
-  compile rootProject.ext.supportAnnotations
+  api rootProject.ext.rxJava
+  api rootProject.ext.rxAndroid
+  api rootProject.ext.supportAnnotations
 
-  androidTestCompile project(':testing-utils')
-  androidTestCompile rootProject.ext.supportTestRunner
-  androidTestCompile rootProject.ext.supportTestRules
-  androidTestCompile rootProject.ext.truth
+  androidTestImplementation project(':testing-utils')
+  androidTestImplementation rootProject.ext.supportTestRunner
+  androidTestImplementation rootProject.ext.supportTestRules
+  androidTestImplementation rootProject.ext.truth
 }
 
 android {
@@ -29,8 +29,8 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_7
-    targetCompatibility JavaVersion.VERSION_1_7
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
   }
 
   dexOptions {

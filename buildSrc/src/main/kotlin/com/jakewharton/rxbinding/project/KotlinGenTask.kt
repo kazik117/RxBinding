@@ -1,3 +1,4 @@
+@file:Suppress("JAVA_MODULE_DOES_NOT_EXPORT_PACKAGE")
 package com.jakewharton.rxbinding.project
 
 import com.github.javaparser.JavaParser

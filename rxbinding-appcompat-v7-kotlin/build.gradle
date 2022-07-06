@@ -9,9 +9,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 dependencies {
-  compile project(':rxbinding-appcompat-v7')
-  compile project(':rxbinding-kotlin')
-  compile rootProject.ext.kotlinStdlib
+  implementation project(':rxbinding-appcompat-v7')
+  implementation project(':rxbinding-kotlin')
+  implementation rootProject.ext.kotlinStdlib
 }
 
 android {
@@ -23,8 +23,8 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_7
-    targetCompatibility JavaVersion.VERSION_1_7
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
   }
 
   dexOptions {

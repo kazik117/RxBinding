@@ -18,8 +18,8 @@ repositories {
 }
 
 dependencies {
-  compile gradleApi()
-  compile rootProject.ext.androidPlugin
-  compile rootProject.ext.javaParser
-  compile rootProject.ext.kotlinStdlib
+  implementation gradleApi()
+  implementation rootProject.ext.androidPlugin
+  implementation rootProject.ext.javaParser
+  implementation rootProject.ext.kotlinStdlib
 }

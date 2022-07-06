@@ -8,16 +8,17 @@ apply plugin: 'com.android.library'
 apply plugin: 'rxbinding-module'
 
 dependencies {
-  compile project(':rxbinding')
-  compile rootProject.ext.supportV4CoreUi
+  api project(':rxbinding')
+  api rootProject.ext.supportV4CoreUi
 
-  androidTestCompile project(':testing-utils')
-  androidTestCompile rootProject.ext.supportTestRunner
-  androidTestCompile rootProject.ext.supportTestRules
-  androidTestCompile rootProject.ext.supportTestEspresso
-  androidTestCompile rootProject.ext.supportTestEspressoContrib
-  androidTestCompile rootProject.ext.rxAndroid
-  androidTestCompile rootProject.ext.truth
+  androidTestImplementation project(':testing-utils')
+  androidTestImplementation rootProject.ext.supportTestRunner
+  androidTestImplementation rootProject.ext.supportTestRules
+  androidTestImplementation rootProject.ext.supportTestEspresso
+  androidTestImplementation rootProject.ext.supportTestEspressoContrib
+  androidTestImplementation rootProject.ext.supportTestEspressoIdlingResource
+  androidTestImplementation rootProject.ext.rxAndroid
+  androidTestImplementation rootProject.ext.truth
 }
 
 android {
@@ -31,8 +32,8 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_7
-    targetCompatibility JavaVersion.VERSION_1_7
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
   }
 
   dexOptions {
