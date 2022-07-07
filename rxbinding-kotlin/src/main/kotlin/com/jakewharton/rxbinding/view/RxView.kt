@@ -1,15 +1,13 @@
 package com.jakewharton.rxbinding.view
 
-import android.view.DragEvent
-import android.view.KeyEvent
-import android.view.MotionEvent
-import android.view.View
-import android.view.ViewTreeObserver
+import android.os.Build.VERSION_CODES
+import android.support.annotation.RequiresApi
+import android.view.*
+import com.jakewharton.rxbinding.internal.VoidToUnit
 import rx.Observable
 import rx.functions.Action1
 import rx.functions.Func0
 import rx.functions.Func1
-import com.jakewharton.rxbinding.internal.VoidToUnit
 
 /**
  * Create an observable which emits on `view` attach events. The emitted value is
@@ -209,6 +207,7 @@ inline fun View.preDraws(proceedDrawingPass: Func0<Boolean>): Observable<Unit> =
  * *Warning:* The created observable keeps a strong reference to `view`. Unsubscribe
  * to free this reference.
  */
+@RequiresApi(VERSION_CODES.M)
 inline fun View.scrollChangeEvents(): Observable<ViewScrollChangeEvent> = RxView.scrollChangeEvents(this)
 
 /**

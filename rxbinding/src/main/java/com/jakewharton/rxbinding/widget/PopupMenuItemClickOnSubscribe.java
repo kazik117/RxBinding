@@ -12,7 +12,7 @@ final class PopupMenuItemClickOnSubscribe implements Observable.OnSubscribe<Menu
 
   final PopupMenu view;
 
-  public PopupMenuItemClickOnSubscribe(PopupMenu view) {
+  PopupMenuItemClickOnSubscribe(PopupMenu view) {
     this.view = view;
   }
 

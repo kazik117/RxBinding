@@ -12,7 +12,7 @@ final class AdapterDataChangeOnSubscribe<T extends Adapter>
     implements Observable.OnSubscribe<T> {
   final T adapter;
 
-  public AdapterDataChangeOnSubscribe(T adapter) {
+  AdapterDataChangeOnSubscribe(T adapter) {
     this.adapter = adapter;
   }
 

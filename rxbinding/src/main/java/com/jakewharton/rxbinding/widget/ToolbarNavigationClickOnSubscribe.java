@@ -14,7 +14,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class ToolbarNavigationClickOnSubscribe implements Observable.OnSubscribe<Void> {
   final Toolbar view;
 
-  public ToolbarNavigationClickOnSubscribe(Toolbar view) {
+  ToolbarNavigationClickOnSubscribe(Toolbar view) {
     this.view = view;
   }
 

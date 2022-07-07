@@ -1,10 +1,12 @@
 package com.jakewharton.rxbinding.widget
 
+import android.os.Build.VERSION_CODES
+import android.support.annotation.RequiresApi
 import android.view.MenuItem
 import android.widget.Toolbar
+import com.jakewharton.rxbinding.internal.VoidToUnit
 import rx.Observable
 import rx.functions.Action1
-import com.jakewharton.rxbinding.internal.VoidToUnit
 
 /**
  * Create an observable which emits the clicked item in `view`'s menu.
@@ -12,6 +14,7 @@ import com.jakewharton.rxbinding.internal.VoidToUnit
  * *Warning:* The created observable keeps a strong reference to `view`. Unsubscribe
  * to free this reference.
  */
+@RequiresApi(VERSION_CODES.LOLLIPOP)
 inline fun Toolbar.itemClicks(): Observable<MenuItem> = RxToolbar.itemClicks(this)
 
 /**
@@ -24,6 +27,7 @@ inline fun Toolbar.itemClicks(): Observable<MenuItem> = RxToolbar.itemClicks(thi
  * *Warning:* The created observable uses [Toolbar.setNavigationOnClickListener]
  * to observe clicks. Only one observable can be used for a view at a time.
  */
+@RequiresApi(VERSION_CODES.LOLLIPOP)
 inline fun Toolbar.navigationClicks(): Observable<Unit> = RxToolbar.navigationClicks(this).map(VoidToUnit)
 
 /**
@@ -32,6 +36,7 @@ inline fun Toolbar.navigationClicks(): Observable<Unit> = RxToolbar.navigationCl
  * *Warning:* The created observable keeps a strong reference to `view`. Unsubscribe
  * to free this reference.
  */
+@RequiresApi(VERSION_CODES.LOLLIPOP)
 inline fun Toolbar.title(): Action1<in CharSequence?> = RxToolbar.title(this)
 
 /**
@@ -40,6 +45,7 @@ inline fun Toolbar.title(): Action1<in CharSequence?> = RxToolbar.title(this)
  * *Warning:* The created observable keeps a strong reference to `view`. Unsubscribe
  * to free this reference.
  */
+@RequiresApi(VERSION_CODES.LOLLIPOP)
 inline fun Toolbar.titleRes(): Action1<in Int> = RxToolbar.titleRes(this)
 
 /**
@@ -48,6 +54,7 @@ inline fun Toolbar.titleRes(): Action1<in Int> = RxToolbar.titleRes(this)
  * *Warning:* The created observable keeps a strong reference to `view`. Unsubscribe
  * to free this reference.
  */
+@RequiresApi(VERSION_CODES.LOLLIPOP)
 inline fun Toolbar.subtitle(): Action1<in CharSequence?> = RxToolbar.subtitle(this)
 
 /**
@@ -56,4 +63,5 @@ inline fun Toolbar.subtitle(): Action1<in CharSequence?> = RxToolbar.subtitle(th
  * *Warning:* The created observable keeps a strong reference to `view`. Unsubscribe
  * to free this reference.
  */
+@RequiresApi(VERSION_CODES.LOLLIPOP)
 inline fun Toolbar.subtitleRes(): Action1<in Int> = RxToolbar.subtitleRes(this)

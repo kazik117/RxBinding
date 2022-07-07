@@ -10,7 +10,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class CompoundButtonCheckedChangeOnSubscribe implements Observable.OnSubscribe<Boolean> {
   final CompoundButton view;
 
-  public CompoundButtonCheckedChangeOnSubscribe(CompoundButton view) {
+  CompoundButtonCheckedChangeOnSubscribe(CompoundButton view) {
     this.view = view;
   }
 

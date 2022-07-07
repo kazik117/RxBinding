@@ -10,7 +10,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class RecyclerViewScrollStateChangeOnSubscribe implements Observable.OnSubscribe<Integer> {
   final RecyclerView recyclerView;
 
-  public RecyclerViewScrollStateChangeOnSubscribe(RecyclerView recyclerView) {
+  RecyclerViewScrollStateChangeOnSubscribe(RecyclerView recyclerView) {
     this.recyclerView = recyclerView;
   }
 

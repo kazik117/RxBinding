@@ -11,7 +11,7 @@ final class SeekBarChangeEventOnSubscribe
     implements Observable.OnSubscribe<SeekBarChangeEvent> {
   final SeekBar view;
 
-  public SeekBarChangeEventOnSubscribe(SeekBar view) {
+  SeekBarChangeEventOnSubscribe(SeekBar view) {
     this.view = view;
   }
 

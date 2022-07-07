@@ -13,7 +13,7 @@ final class AutoCompleteTextViewItemClickEventOnSubscribe
     implements Observable.OnSubscribe<AdapterViewItemClickEvent> {
   final AutoCompleteTextView view;
 
-  public AutoCompleteTextViewItemClickEventOnSubscribe(AutoCompleteTextView view) {
+  AutoCompleteTextViewItemClickEventOnSubscribe(AutoCompleteTextView view) {
     this.view = view;
   }
 

@@ -12,7 +12,7 @@ final class AdapterViewItemClickEventOnSubscribe
     implements Observable.OnSubscribe<AdapterViewItemClickEvent> {
   final AdapterView<?> view;
 
-  public AdapterViewItemClickEventOnSubscribe(AdapterView<?> view) {
+  AdapterViewItemClickEventOnSubscribe(AdapterView<?> view) {
     this.view = view;
   }
 

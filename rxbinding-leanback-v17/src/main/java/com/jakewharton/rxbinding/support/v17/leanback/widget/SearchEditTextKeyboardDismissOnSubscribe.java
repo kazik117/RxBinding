@@ -11,7 +11,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class SearchEditTextKeyboardDismissOnSubscribe implements Observable.OnSubscribe<Void> {
   final SearchEditText view;
 
-  public SearchEditTextKeyboardDismissOnSubscribe(SearchEditText view) {
+  SearchEditTextKeyboardDismissOnSubscribe(SearchEditText view) {
     this.view = view;
   }
 

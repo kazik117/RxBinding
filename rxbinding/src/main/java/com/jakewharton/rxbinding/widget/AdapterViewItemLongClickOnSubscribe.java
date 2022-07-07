@@ -13,7 +13,7 @@ final class AdapterViewItemLongClickOnSubscribe implements Observable.OnSubscrib
   final AdapterView<?> view;
   final Func0<Boolean> handled;
 
-  public AdapterViewItemLongClickOnSubscribe(AdapterView<?> view, Func0<Boolean> handled) {
+  AdapterViewItemLongClickOnSubscribe(AdapterView<?> view, Func0<Boolean> handled) {
     this.view = view;
     this.handled = handled;
   }

@@ -10,7 +10,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class RatingBarRatingChangeOnSubscribe implements Observable.OnSubscribe<Float> {
   final RatingBar view;
 
-  public RatingBarRatingChangeOnSubscribe(RatingBar view) {
+  RatingBarRatingChangeOnSubscribe(RatingBar view) {
     this.view = view;
   }
 

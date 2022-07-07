@@ -13,7 +13,7 @@ final class AdapterViewSelectionOnSubscribe
     implements Observable.OnSubscribe<AdapterViewSelectionEvent> {
   final AdapterView<?> view;
 
-  public AdapterViewSelectionOnSubscribe(AdapterView<?> view) {
+  AdapterViewSelectionOnSubscribe(AdapterView<?> view) {
     this.view = view;
   }
 

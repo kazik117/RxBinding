@@ -11,7 +11,7 @@ final class RecyclerViewScrollEventOnSubscribe
     implements Observable.OnSubscribe<RecyclerViewScrollEvent> {
   final RecyclerView recyclerView;
 
-  public RecyclerViewScrollEventOnSubscribe(RecyclerView recyclerView) {
+  RecyclerViewScrollEventOnSubscribe(RecyclerView recyclerView) {
     this.recyclerView = recyclerView;
   }
 

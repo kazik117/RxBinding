@@ -12,7 +12,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class SwipeDismissBehaviorOnSubscribe implements Observable.OnSubscribe<View> {
   private final View view;
 
-  public SwipeDismissBehaviorOnSubscribe(View view) {
+  SwipeDismissBehaviorOnSubscribe(View view) {
     this.view = view;
   }
 

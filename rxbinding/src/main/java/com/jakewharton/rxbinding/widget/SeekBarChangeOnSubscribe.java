@@ -12,7 +12,7 @@ final class SeekBarChangeOnSubscribe implements Observable.OnSubscribe<Integer> 
   final SeekBar view;
   @Nullable final Boolean shouldBeFromUser;
 
-  public SeekBarChangeOnSubscribe(SeekBar view, @Nullable Boolean shouldBeFromUser) {
+  SeekBarChangeOnSubscribe(SeekBar view, @Nullable Boolean shouldBeFromUser) {
     this.view = view;
     this.shouldBeFromUser = shouldBeFromUser;
   }

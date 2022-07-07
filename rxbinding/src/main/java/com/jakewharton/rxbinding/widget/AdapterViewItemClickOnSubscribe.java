@@ -11,7 +11,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class AdapterViewItemClickOnSubscribe implements Observable.OnSubscribe<Integer> {
   final AdapterView<?> view;
 
-  public AdapterViewItemClickOnSubscribe(AdapterView<?> view) {
+  AdapterViewItemClickOnSubscribe(AdapterView<?> view) {
     this.view = view;
   }
 

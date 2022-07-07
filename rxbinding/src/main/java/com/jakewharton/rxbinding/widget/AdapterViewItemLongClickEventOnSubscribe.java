@@ -14,7 +14,7 @@ final class AdapterViewItemLongClickEventOnSubscribe
   final AdapterView<?> view;
   final Func1<? super AdapterViewItemLongClickEvent, Boolean> handled;
 
-  public AdapterViewItemLongClickEventOnSubscribe(AdapterView<?> view,
+  AdapterViewItemLongClickEventOnSubscribe(AdapterView<?> view,
       Func1<? super AdapterViewItemLongClickEvent, Boolean> handled) {
     this.view = view;
     this.handled = handled;

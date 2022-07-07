@@ -10,7 +10,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class RadioGroupCheckedChangeOnSubscribe implements Observable.OnSubscribe<Integer> {
   final RadioGroup view;
 
-  public RadioGroupCheckedChangeOnSubscribe(RadioGroup view) {
+  RadioGroupCheckedChangeOnSubscribe(RadioGroup view) {
     this.view = view;
   }
 

@@ -13,7 +13,7 @@ final class RecyclerViewChildAttachStateChangeEventOnSubscribe
     implements Observable.OnSubscribe<RecyclerViewChildAttachStateChangeEvent> {
   final RecyclerView recyclerView;
 
-  public RecyclerViewChildAttachStateChangeEventOnSubscribe(RecyclerView recyclerView) {
+  RecyclerViewChildAttachStateChangeEventOnSubscribe(RecyclerView recyclerView) {
     this.recyclerView = recyclerView;
   }
 

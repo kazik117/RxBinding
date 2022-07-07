@@ -12,7 +12,7 @@ import static rx.android.MainThreadSubscription.verifyMainThread;
 final class AdapterViewItemSelectionOnSubscribe implements Observable.OnSubscribe<Integer> {
   final AdapterView<?> view;
 
-  public AdapterViewItemSelectionOnSubscribe(AdapterView<?> view) {
+  AdapterViewItemSelectionOnSubscribe(AdapterView<?> view) {
     this.view = view;
   }
 

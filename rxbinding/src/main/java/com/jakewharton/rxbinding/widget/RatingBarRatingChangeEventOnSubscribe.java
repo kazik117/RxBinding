@@ -11,7 +11,7 @@ final class RatingBarRatingChangeEventOnSubscribe
     implements Observable.OnSubscribe<RatingBarChangeEvent> {
   final RatingBar view;
 
-  public RatingBarRatingChangeEventOnSubscribe(RatingBar view) {
+  RatingBarRatingChangeEventOnSubscribe(RatingBar view) {
     this.view = view;
   }
 

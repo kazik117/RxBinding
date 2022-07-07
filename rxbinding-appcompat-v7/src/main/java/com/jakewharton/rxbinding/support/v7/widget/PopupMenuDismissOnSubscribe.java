@@ -11,7 +11,7 @@ final class PopupMenuDismissOnSubscribe implements Observable.OnSubscribe<Void> 
 
   final PopupMenu view;
 
-  public PopupMenuDismissOnSubscribe(PopupMenu view) {
+  PopupMenuDismissOnSubscribe(PopupMenu view) {
     this.view = view;
   }
 
