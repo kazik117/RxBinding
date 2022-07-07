@@ -29,7 +29,6 @@ class RxBindingPlugin : Plugin<Project> {
       }
 
       genTask.outputs.upToDateWhen { false }
-      project.tasks.add(genTask)
 
       // Task for validating Rx*.java factory method structures
       val validateBindingsTask
