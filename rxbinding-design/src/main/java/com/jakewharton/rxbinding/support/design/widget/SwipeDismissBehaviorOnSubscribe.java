@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.design.widget.CoordinatorLayout.LayoutParams;
-import android.support.design.widget.SwipeDismissBehavior;
+import androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams;
+import com.google.android.material.behavior.SwipeDismissBehavior;
 import android.view.View;
 import rx.Observable;
 import rx.Subscriber;

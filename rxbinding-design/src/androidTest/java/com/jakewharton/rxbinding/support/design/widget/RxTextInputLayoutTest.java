@@ -1,11 +1,11 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
 import android.content.Context;
-import android.support.design.widget.TextInputLayout;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.ContextThemeWrapper;
 import android.widget.EditText;
 import com.jakewharton.rxbinding.support.design.test.R;
@@ -20,7 +20,7 @@ import static com.google.common.truth.Truth.assertThat;
 public class RxTextInputLayoutTest {
   @Rule public final UiThreadTestRule uiThread = new UiThreadTestRule();
 
-  private final Context rawContext = InstrumentationRegistry.getContext();
+  private final Context rawContext = ApplicationProvider.getApplicationContext();
   private final Context context = new ContextThemeWrapper(rawContext, R.style.Theme_AppCompat);
   private final TextInputLayout view = new TextInputLayout(context);
 

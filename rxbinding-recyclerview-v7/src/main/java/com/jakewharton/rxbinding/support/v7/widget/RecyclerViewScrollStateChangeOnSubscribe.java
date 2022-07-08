@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.MainThreadSubscription;

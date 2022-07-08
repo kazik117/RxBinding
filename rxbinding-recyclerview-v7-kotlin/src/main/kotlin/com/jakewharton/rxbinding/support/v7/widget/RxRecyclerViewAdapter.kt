@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.v7.widget
 
-import android.support.v7.widget.RecyclerView.Adapter
-import android.support.v7.widget.RecyclerView.ViewHolder
+import androidx.recyclerview.widget.RecyclerView.Adapter
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import rx.Observable
 
 /**

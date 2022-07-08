@@ -2,7 +2,7 @@ package com.jakewharton.rxbinding.support.v4.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.widget.NestedScrollView;
+import androidx.core.widget.NestedScrollView;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.FrameLayout;
 import android.widget.ScrollView;

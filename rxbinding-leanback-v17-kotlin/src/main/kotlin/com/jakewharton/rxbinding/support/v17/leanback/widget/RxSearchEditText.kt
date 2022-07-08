@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v17.leanback.widget
 
-import android.support.v17.leanback.widget.SearchEditText
+import androidx.leanback.widget.SearchEditText
 import rx.Observable
 import com.jakewharton.rxbinding.internal.VoidToUnit
 

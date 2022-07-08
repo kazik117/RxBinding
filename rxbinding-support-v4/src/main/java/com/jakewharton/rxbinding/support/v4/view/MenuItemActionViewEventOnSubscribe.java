@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v4.view;
 
-import android.support.v4.view.MenuItemCompat;
+import androidx.core.view.MenuItemCompat;
 import android.view.MenuItem;
 
 import com.jakewharton.rxbinding.view.MenuItemActionViewEvent;

@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v7.widget
 
-import android.support.v7.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import rx.Observable
 import rx.functions.Action1
 

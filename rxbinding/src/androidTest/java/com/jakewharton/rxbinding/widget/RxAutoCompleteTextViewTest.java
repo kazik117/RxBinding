@@ -1,37 +1,42 @@
 package com.jakewharton.rxbinding.widget;
 
-import android.annotation.TargetApi;
-import android.app.Instrumentation;
-import android.os.Build;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.filters.SdkSuppress;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import com.jakewharton.rxbinding.RecordingObserver;
-import com.jakewharton.rxbinding.test.R;
-import java.util.Arrays;
-import java.util.List;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-
-import static android.support.test.espresso.Espresso.onData;
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.clearText;
-import static android.support.test.espresso.action.ViewActions.click;
-import static android.support.test.espresso.action.ViewActions.typeText;
-import static android.support.test.espresso.matcher.RootMatchers.withDecorView;
-import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.Espresso.onData;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.clearText;
+import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.action.ViewActions.typeText;
+import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static com.google.common.truth.Truth.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.startsWith;
+
+import android.annotation.TargetApi;
+import android.app.Instrumentation;
+import android.os.Build;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.filters.SdkSuppress;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.rule.ActivityTestRule;
+
+import com.jakewharton.rxbinding.RecordingObserver;
+import com.jakewharton.rxbinding.test.R;
+
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import java.util.Arrays;
+import java.util.List;
+
+import rx.Subscription;
+import rx.android.schedulers.AndroidSchedulers;
 
 @RunWith(AndroidJUnit4.class)
 public final class RxAutoCompleteTextViewTest {

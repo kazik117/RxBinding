@@ -1,13 +1,14 @@
 package com.jakewharton.rxbinding.support.v4.widget;
 
 import android.app.Instrumentation;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.espresso.Espresso;
-import android.support.test.espresso.idling.CountingIdlingResource;
-import android.support.test.espresso.matcher.BoundedMatcher;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.support.v4.widget.SlidingPaneLayout;
+import androidx.test.espresso.Espresso;
+import androidx.test.espresso.IdlingRegistry;
+import androidx.test.espresso.idling.CountingIdlingResource;
+import androidx.test.espresso.matcher.BoundedMatcher;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.slidingpanelayout.widget.SlidingPaneLayout;
 import android.view.View;
 import com.jakewharton.rxbinding.RecordingObserver;
 import org.hamcrest.Description;
@@ -21,9 +22,9 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.assertion.ViewAssertions.matches;
-import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static com.google.common.truth.Truth.assertThat;
 
 @RunWith(AndroidJUnit4.class) public class RxSlidingPaneLayoutTest {
@@ -41,11 +42,11 @@ import static com.google.common.truth.Truth.assertThat;
     view = activity.slidingPaneLayout;
 
     idler = new CountingIdlingResource("counting idler");
-    Espresso.registerIdlingResources(idler);
+    IdlingRegistry.getInstance().register(idler);
   }
 
   @After public void teardown() {
-    Espresso.unregisterIdlingResources(idler);
+    IdlingRegistry.getInstance().unregister(idler);
   }
 
   @Test public void paneOpen() {

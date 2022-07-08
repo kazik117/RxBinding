@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.v17.leanback.widget;
 
-import android.support.v17.leanback.widget.SearchEditText;
-import android.support.v17.leanback.widget.SearchEditText.OnKeyboardDismissListener;
+import androidx.leanback.widget.SearchEditText;
+import androidx.leanback.widget.SearchEditText.OnKeyboardDismissListener;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.MainThreadSubscription;

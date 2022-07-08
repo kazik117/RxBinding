@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.view;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import rx.Observable;
 import rx.Subscriber;

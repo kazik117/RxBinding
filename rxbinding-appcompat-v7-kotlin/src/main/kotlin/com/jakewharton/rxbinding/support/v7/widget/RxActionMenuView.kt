@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v7.widget
 
-import android.support.v7.widget.ActionMenuView
+import androidx.appcompat.widget.ActionMenuView
 import android.view.MenuItem
 import rx.Observable
 

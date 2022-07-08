@@ -2,7 +2,7 @@ package com.jakewharton.rxbinding.support.v7.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.PopupMenu;
+import androidx.appcompat.widget.PopupMenu;
 import android.view.View;
 
 public final class RxPopupMenuTestActivity extends Activity {

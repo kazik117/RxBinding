@@ -1,8 +1,8 @@
 package com.jakewharton.rxbinding.view;
 
 import android.graphics.drawable.Drawable;
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
 import android.view.MenuItem;
 
 import com.jakewharton.rxbinding.internal.Functions;

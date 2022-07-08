@@ -1,29 +1,34 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
+import static com.google.common.truth.Truth.assertThat;
+
 import android.app.Instrumentation;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.espresso.Espresso;
-import android.support.test.espresso.ViewInteraction;
-import android.support.test.espresso.matcher.ViewMatchers;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.test.espresso.Espresso;
+import androidx.test.espresso.IdlingRegistry;
+import androidx.test.espresso.ViewInteraction;
+import androidx.test.espresso.matcher.ViewMatchers;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.rule.ActivityTestRule;
+
 import com.jakewharton.rxbinding.RecordingObserver;
 import com.jakewharton.rxbinding.ViewDirtyIdlingResource;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
-
-import static com.google.common.truth.Truth.assertThat;
 
 @RunWith(AndroidJUnit4.class)
 public final class RxRecyclerViewTest {
@@ -43,11 +48,11 @@ public final class RxRecyclerViewTest {
     child = new View(activityRule.getActivity());
     interaction = Espresso.onView(ViewMatchers.withId(android.R.id.primary));
     viewDirtyIdler = new ViewDirtyIdlingResource(activity);
-    Espresso.registerIdlingResources(viewDirtyIdler);
+    IdlingRegistry.getInstance().register(viewDirtyIdler);
   }
 
   @After public void tearDown() {
-    Espresso.unregisterIdlingResources(viewDirtyIdler);
+    IdlingRegistry.getInstance().unregister(viewDirtyIdler);
   }
 
   @Test public void childAttachEvents() {

@@ -2,13 +2,13 @@ package com.jakewharton.rxbinding.support.design.widget;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.filters.SdkSuppress;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.filters.SdkSuppress;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import com.jakewharton.rxbinding.RecordingObserver;
@@ -26,7 +26,7 @@ import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 public class RxAppBarLayoutTest {
   @Rule public final UiThreadTestRule uiThreadTestRule = new UiThreadTestRule();
 
-  private final Context rawContext = InstrumentationRegistry.getContext();
+  private final Context rawContext = ApplicationProvider.getApplicationContext();
   private final Context context = new ContextThemeWrapper(rawContext, R.style.Theme_AppCompat);
   private final CoordinatorLayout parent = new CoordinatorLayout(context);
   private final AppBarLayout view = new AppBarLayout(context);

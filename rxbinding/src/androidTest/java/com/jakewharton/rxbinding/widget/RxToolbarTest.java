@@ -1,9 +1,9 @@
 package com.jakewharton.rxbinding.widget;
 
 import android.annotation.TargetApi;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.filters.SdkSuppress;
-import android.support.test.rule.ActivityTestRule;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.filters.SdkSuppress;
+import androidx.test.rule.ActivityTestRule;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toolbar;
@@ -17,9 +17,9 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 
 import static android.os.Build.VERSION_CODES.LOLLIPOP;
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.click;
-import static android.support.test.espresso.matcher.ViewMatchers.withContentDescription;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static com.google.common.truth.Truth.assertThat;
 import static com.jakewharton.rxbinding.widget.RxToolbarTestActivity.NAVIGATION_CONTENT_DESCRIPTION;
 

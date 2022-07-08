@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v4.view
 
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.ViewPager
 import rx.Observable
 import rx.functions.Action1
 

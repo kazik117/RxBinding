@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.MainThreadSubscription;

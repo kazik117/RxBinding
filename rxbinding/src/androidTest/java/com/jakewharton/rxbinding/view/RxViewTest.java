@@ -2,11 +2,11 @@ package com.jakewharton.rxbinding.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.filters.SdkSuppress;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.filters.SdkSuppress;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -36,7 +36,7 @@ import static org.junit.Assert.fail;
 public final class RxViewTest {
   @Rule public final UiThreadTestRule uiThread = new UiThreadTestRule();
 
-  private final Context context = InstrumentationRegistry.getContext();
+  private final Context context = ApplicationProvider.getApplicationContext();
   private final View view = new View(context);
 
   @Test @UiThreadTest public void clicks() {

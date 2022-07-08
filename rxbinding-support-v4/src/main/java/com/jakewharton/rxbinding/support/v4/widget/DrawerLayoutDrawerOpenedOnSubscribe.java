@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.v4.widget;
 
-import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.DrawerLayout.LayoutParams;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.drawerlayout.widget.DrawerLayout.LayoutParams;
 import android.view.View;
 import rx.Observable;
 import rx.Subscriber;

@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v17.leanback.widget
 
-import android.support.v17.leanback.widget.SearchBar
+import androidx.leanback.widget.SearchBar
 import rx.Observable
 import rx.functions.Action1
 

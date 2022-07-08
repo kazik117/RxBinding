@@ -7,11 +7,11 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.support.v17.leanback.widget.SearchBar;
-import android.support.v17.leanback.widget.SearchEditText;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.leanback.widget.SearchBar;
+import androidx.leanback.widget.SearchEditText;
 import android.view.KeyEvent;
 
 import rx.Subscription;

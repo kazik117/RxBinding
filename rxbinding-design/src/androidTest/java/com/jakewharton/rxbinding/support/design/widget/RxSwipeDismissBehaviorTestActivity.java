@@ -2,7 +2,7 @@ package com.jakewharton.rxbinding.support.design.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.view.View;
 
 public class RxSwipeDismissBehaviorTestActivity extends Activity {

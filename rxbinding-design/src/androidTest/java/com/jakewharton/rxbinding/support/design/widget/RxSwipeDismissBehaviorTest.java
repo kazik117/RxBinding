@@ -1,14 +1,14 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.SwipeDismissBehavior;
-import android.support.test.espresso.ViewAction;
-import android.support.test.espresso.action.GeneralLocation;
-import android.support.test.espresso.action.GeneralSwipeAction;
-import android.support.test.espresso.action.Press;
-import android.support.test.espresso.action.Swipe;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import com.google.android.material.behavior.SwipeDismissBehavior;
+import androidx.test.espresso.ViewAction;
+import androidx.test.espresso.action.GeneralLocation;
+import androidx.test.espresso.action.GeneralSwipeAction;
+import androidx.test.espresso.action.Press;
+import androidx.test.espresso.action.Swipe;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.View;
 import com.jakewharton.rxbinding.RecordingObserver;
 import org.junit.Before;
@@ -18,8 +18,8 @@ import org.junit.runner.RunWith;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static com.google.common.truth.Truth.assertThat;
 
 @RunWith(AndroidJUnit4.class)

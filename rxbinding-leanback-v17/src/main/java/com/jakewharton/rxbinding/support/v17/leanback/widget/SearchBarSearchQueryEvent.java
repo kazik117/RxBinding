@@ -2,9 +2,9 @@ package com.jakewharton.rxbinding.support.v17.leanback.widget;
 
 import com.jakewharton.rxbinding.view.ViewEvent;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
-import android.support.v17.leanback.widget.SearchBar;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
+import androidx.leanback.widget.SearchBar;
 
 public final class SearchBarSearchQueryEvent extends ViewEvent<SearchBar> {
   public enum Kind {

@@ -1,10 +1,11 @@
 package com.jakewharton.rxbinding.widget;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.widget.ProgressBar;
 import org.junit.Rule;
 import org.junit.Test;
@@ -17,7 +18,7 @@ import static com.google.common.truth.Truth.assertThat;
 public final class RxProgressBarTest {
   @Rule public final UiThreadTestRule uiThread = new UiThreadTestRule();
 
-  private final Context context = InstrumentationRegistry.getContext();
+  private final Context context = ApplicationProvider.getApplicationContext();
   private final ProgressBar view = new ProgressBar(context, null, 0); // Explicit no defStyleAttr.
 
   @Test @UiThreadTest public void incrementProgressBy() {

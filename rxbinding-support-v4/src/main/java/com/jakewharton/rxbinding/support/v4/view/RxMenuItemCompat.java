@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.v4.view;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
 import android.view.MenuItem;
 
 import com.jakewharton.rxbinding.internal.Functions;
@@ -14,7 +14,7 @@ import static com.jakewharton.rxbinding.internal.Preconditions.checkNotNull;
 
 /**
  * Static factory methods for creating {@linkplain Observable observables}
- * for {@link android.support.v4.view.MenuItemCompat}.
+ * for {@link androidx.core.view.MenuItemCompat}.
  */
 public final class RxMenuItemCompat {
 

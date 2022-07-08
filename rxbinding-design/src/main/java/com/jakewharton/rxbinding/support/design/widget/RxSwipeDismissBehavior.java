@@ -1,8 +1,8 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
-import android.support.design.widget.SwipeDismissBehavior;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
+import com.google.android.material.behavior.SwipeDismissBehavior;
 import android.view.View;
 import rx.Observable;
 

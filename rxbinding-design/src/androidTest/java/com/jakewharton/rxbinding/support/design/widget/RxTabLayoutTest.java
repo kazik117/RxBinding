@@ -1,11 +1,11 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
 import android.content.Context;
-import android.support.design.widget.TabLayout;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import com.google.android.material.tabs.TabLayout;
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.ContextThemeWrapper;
 import com.jakewharton.rxbinding.RecordingObserver;
 import com.jakewharton.rxbinding.support.design.R;
@@ -26,7 +26,7 @@ import static org.junit.Assert.fail;
 public final class RxTabLayoutTest {
   @Rule public final UiThreadTestRule uiThreadTestRule = new UiThreadTestRule();
 
-  private final Context rawContext = InstrumentationRegistry.getContext();
+  private final Context rawContext = ApplicationProvider.getApplicationContext();
   private final Context context = new ContextThemeWrapper(rawContext, R.style.Theme_AppCompat);
   private final TabLayout view = new TabLayout(context);
   private final TabLayout.Tab tab1 = view.newTab();

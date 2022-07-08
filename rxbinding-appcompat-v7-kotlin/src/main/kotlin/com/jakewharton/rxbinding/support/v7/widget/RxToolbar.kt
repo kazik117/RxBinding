@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v7.widget
 
-import android.support.v7.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import android.view.MenuItem
 import rx.Observable
 import rx.functions.Action1

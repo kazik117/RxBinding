@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.view
 
 import android.os.Build.VERSION_CODES
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import android.view.*
 import com.jakewharton.rxbinding.internal.VoidToUnit
 import rx.Observable

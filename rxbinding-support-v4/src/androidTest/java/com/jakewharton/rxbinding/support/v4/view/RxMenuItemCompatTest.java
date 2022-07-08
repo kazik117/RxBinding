@@ -3,10 +3,10 @@ package com.jakewharton.rxbinding.support.v4.view;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.ActionProvider;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -28,7 +28,7 @@ import static com.google.common.truth.Truth.assertThat;
 public final class RxMenuItemCompatTest {
   @Rule public final UiThreadTestRule uiThread = new UiThreadTestRule();
 
-  private final Context context = InstrumentationRegistry.getContext();
+  private final Context context = ApplicationProvider.getApplicationContext();
   private final TestMenuItem menuItem = new TestMenuItem(context);
 
   @Test @UiThreadTest public void actionViewEvents() {

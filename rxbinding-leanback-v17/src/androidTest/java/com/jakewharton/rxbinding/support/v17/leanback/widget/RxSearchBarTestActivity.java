@@ -2,9 +2,9 @@ package com.jakewharton.rxbinding.support.v17.leanback.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v17.leanback.widget.SearchBar;
-import android.support.v17.leanback.widget.SearchEditText;
-import android.support.v17.leanback.widget.SearchOrbView;
+import androidx.leanback.widget.SearchBar;
+import androidx.leanback.widget.SearchEditText;
+import androidx.leanback.widget.SearchOrbView;
 import com.jakewharton.rxbinding.support.v17.leanback.R;
 
 public final class RxSearchBarTestActivity extends Activity {

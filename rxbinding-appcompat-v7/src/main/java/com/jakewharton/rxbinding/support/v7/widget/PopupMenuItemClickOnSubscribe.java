@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
-import android.support.v7.widget.PopupMenu;
+import androidx.appcompat.widget.PopupMenu;
 import android.view.MenuItem;
 import rx.Observable;
 import rx.Subscriber;

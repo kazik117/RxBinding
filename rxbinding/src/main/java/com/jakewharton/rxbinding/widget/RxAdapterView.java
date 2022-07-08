@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.widget;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import com.jakewharton.rxbinding.internal.Functions;

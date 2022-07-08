@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.widget
 
 import android.os.Build.VERSION_CODES
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import android.view.MenuItem
 import android.widget.Toolbar
 import com.jakewharton.rxbinding.internal.VoidToUnit

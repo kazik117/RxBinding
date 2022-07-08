@@ -1,11 +1,12 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.support.v7.widget.ActionMenuView;
+
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.appcompat.widget.ActionMenuView;
 import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +26,7 @@ public final class RxActionMenuViewTest {
 
   @Rule public final UiThreadTestRule uiThreadTestRule = new UiThreadTestRule();
 
-  private final Context rawContext = InstrumentationRegistry.getContext();
+  private final Context rawContext = ApplicationProvider.getApplicationContext();
   private final Context context = new ContextThemeWrapper(rawContext, R.style.Theme_AppCompat);
 
   private ActionMenuView view;

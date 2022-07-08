@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.design.widget.NavigationView;
+import com.google.android.material.navigation.NavigationView;
 import android.view.Menu;
 import android.view.MenuItem;
 import rx.Observable;

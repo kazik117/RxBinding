@@ -1,9 +1,9 @@
 package com.jakewharton.rxbinding.widget;
 
 import android.app.Instrumentation;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.widget.ListView;
 import android.widget.Spinner;
 import com.jakewharton.rxbinding.RecordingObserver;
@@ -22,7 +22,7 @@ public final class RxAdapterViewTest {
   @Rule public final ActivityTestRule<RxAdapterViewTestActivity> activityRule =
       new ActivityTestRule<>(RxAdapterViewTestActivity.class);
 
-  private Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
+  private final Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
 
   private RxAdapterViewTestActivity activity;
   private Spinner spinner;

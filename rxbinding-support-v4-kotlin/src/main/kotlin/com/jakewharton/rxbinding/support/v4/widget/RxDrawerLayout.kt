@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.v4.widget
 
-import android.support.v4.widget.DrawerLayout
+import androidx.drawerlayout.widget.DrawerLayout
 import rx.Observable
 import rx.functions.Action1
 

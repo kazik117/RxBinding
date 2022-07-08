@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.design.widget
 
-import android.support.design.widget.TextInputLayout
+import com.google.android.material.textfield.TextInputLayout
 import rx.functions.Action1
 
 /**

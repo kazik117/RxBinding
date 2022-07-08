@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.design.widget.TabLayout;
-import android.support.design.widget.TabLayout.Tab;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayout.Tab;
 import com.jakewharton.rxbinding.support.design.widget.TabLayoutSelectionEvent.Kind;
 import rx.Observable;
 import rx.Subscriber;

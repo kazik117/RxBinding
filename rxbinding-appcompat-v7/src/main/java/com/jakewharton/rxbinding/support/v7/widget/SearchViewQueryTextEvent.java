@@ -1,8 +1,8 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.SearchView;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import com.jakewharton.rxbinding.view.ViewEvent;
 
 public final class SearchViewQueryTextEvent extends ViewEvent<SearchView> {

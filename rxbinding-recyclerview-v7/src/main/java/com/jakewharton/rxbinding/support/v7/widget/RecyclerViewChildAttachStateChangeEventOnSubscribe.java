@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnChildAttachStateChangeListener;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.OnChildAttachStateChangeListener;
 import android.view.View;
 import rx.Observable;
 import rx.Subscriber;

@@ -1,9 +1,9 @@
 package com.jakewharton.rxbinding.widget;
 
 import android.app.Instrumentation;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.widget.ListView;
 import com.jakewharton.rxbinding.RecordingObserver;
 import org.junit.Before;
@@ -20,7 +20,7 @@ public final class RxAbsListViewTest {
   @Rule public final ActivityTestRule<RxAbsListViewTestActivity> activityRule =
       new ActivityTestRule<>(RxAbsListViewTestActivity.class);
 
-  private Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
+  private final Instrumentation instrumentation = InstrumentationRegistry.getInstrumentation();
 
   private RxAbsListViewTestActivity activity;
   private ListView listView;

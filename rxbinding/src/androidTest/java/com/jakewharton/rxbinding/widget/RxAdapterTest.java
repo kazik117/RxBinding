@@ -1,8 +1,8 @@
 package com.jakewharton.rxbinding.widget;
 
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;

@@ -2,7 +2,7 @@ package com.jakewharton.rxbinding.support.v7.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 public final class RxToolbarTestActivity extends Activity {
   static final String NAVIGATION_CONTENT_DESCRIPTION = "click me!";

@@ -2,7 +2,8 @@ package com.jakewharton.rxbinding;
 
 import android.app.Instrumentation;
 import android.os.SystemClock;
-import android.support.test.InstrumentationRegistry;
+import androidx.test.platform.app.InstrumentationRegistry;
+
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;

@@ -1,8 +1,8 @@
 package com.jakewharton.rxbinding.support.v7.widget;
 
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.ActivityTestRule;
-import android.support.v7.widget.Toolbar;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.ActivityTestRule;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.jakewharton.rxbinding.RecordingObserver;
@@ -14,9 +14,9 @@ import org.junit.Test;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.click;
-import static android.support.test.espresso.matcher.ViewMatchers.withContentDescription;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static com.google.common.truth.Truth.assertThat;
 import static com.jakewharton.rxbinding.support.v7.widget.RxToolbarTestActivity.NAVIGATION_CONTENT_DESCRIPTION;
 

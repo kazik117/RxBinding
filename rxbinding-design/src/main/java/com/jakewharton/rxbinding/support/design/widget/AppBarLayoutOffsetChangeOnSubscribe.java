@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.design.widget.AppBarLayout;
+import com.google.android.material.appbar.AppBarLayout;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.MainThreadSubscription;

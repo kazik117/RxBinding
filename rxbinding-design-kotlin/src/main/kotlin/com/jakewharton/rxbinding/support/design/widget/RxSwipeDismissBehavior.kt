@@ -1,6 +1,6 @@
 package com.jakewharton.rxbinding.support.design.widget
 
-import android.support.design.widget.SwipeDismissBehavior
+import com.google.android.material.behavior.SwipeDismissBehavior
 import android.view.View
 import rx.Observable
 

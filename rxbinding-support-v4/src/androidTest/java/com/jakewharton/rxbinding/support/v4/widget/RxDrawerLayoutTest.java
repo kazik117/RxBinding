@@ -1,11 +1,11 @@
 package com.jakewharton.rxbinding.support.v4.widget;
 
 import android.app.Instrumentation;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.espresso.Espresso;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.support.v4.widget.DrawerLayout;
+import androidx.test.espresso.IdlingRegistry;
+import androidx.test.platform.app.InstrumentationRegistry;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.drawerlayout.widget.DrawerLayout;
 import com.jakewharton.rxbinding.RecordingObserver;
 import com.jakewharton.rxbinding.ViewDirtyIdlingResource;
 import org.junit.After;
@@ -17,11 +17,11 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.assertion.ViewAssertions.matches;
-import static android.support.test.espresso.contrib.DrawerMatchers.isClosed;
-import static android.support.test.espresso.contrib.DrawerMatchers.isOpen;
-import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.contrib.DrawerMatchers.isClosed;
+import static androidx.test.espresso.contrib.DrawerMatchers.isOpen;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static android.view.Gravity.RIGHT;
 import static com.google.common.truth.Truth.assertThat;
 
@@ -40,11 +40,11 @@ public final class RxDrawerLayoutTest {
     view = activity.drawerLayout;
 
     viewDirtyIdler = new ViewDirtyIdlingResource(activity);
-    Espresso.registerIdlingResources(viewDirtyIdler);
+    IdlingRegistry.getInstance().register(viewDirtyIdler);
   }
 
   @After public void tearDown() {
-    Espresso.unregisterIdlingResources(viewDirtyIdler);
+    IdlingRegistry.getInstance().unregister(viewDirtyIdler);
   }
 
   @Test public void drawerOpen() {

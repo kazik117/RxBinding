@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding.support.design.widget;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.Menu;
 import android.view.MenuItem;
 import rx.Observable;

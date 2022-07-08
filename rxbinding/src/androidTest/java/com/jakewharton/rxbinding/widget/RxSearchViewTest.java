@@ -1,10 +1,11 @@
 package com.jakewharton.rxbinding.widget;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.annotation.UiThreadTest;
-import android.support.test.rule.UiThreadTestRule;
-import android.support.test.runner.AndroidJUnit4;
+
+import androidx.test.core.app.ApplicationProvider;
+import androidx.test.annotation.UiThreadTest;
+import androidx.test.rule.UiThreadTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 import android.widget.SearchView;
 import com.jakewharton.rxbinding.RecordingObserver;
 import org.junit.Before;
@@ -19,7 +20,7 @@ import static com.google.common.truth.Truth.assertThat;
 public final class RxSearchViewTest {
   @Rule public final UiThreadTestRule uiThreadTestRule = new UiThreadTestRule();
 
-  private final Context context = InstrumentationRegistry.getContext();
+  private final Context context = ApplicationProvider.getApplicationContext();
 
   private SearchView searchView;
 

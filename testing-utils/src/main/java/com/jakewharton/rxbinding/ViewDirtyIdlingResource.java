@@ -1,7 +1,7 @@
 package com.jakewharton.rxbinding;
 
 import android.app.Activity;
-import android.support.test.espresso.IdlingResource;
+import androidx.test.espresso.IdlingResource;
 import android.view.View;
 
 public final class ViewDirtyIdlingResource implements IdlingResource {
